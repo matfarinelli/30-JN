@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("pexels-johannes-rapprich-2508810.jpg") center;
+  object-fit: cover;
+  object-position: center top;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 20rem;
+  height: 20em;*/
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  min-height: 350px;
+  min-width: 350px;
+}
+
+.clock-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 10px;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 840px;
+  max-height: 840px;
+}
+
+.hand {
+  position: absolute;
+  min-width: 150px;
+  width: 40%;
+  max-width: 350px;
+  background: rgba(0, 0, 0, 0.486);
+  /* instrucciones para centrar la aguja*/
+  top: 50%;
+  right: 50%;
+  transform-origin: 100%; /* nos permite indicar desde que punto "rotar"*/
+  /* efectos segundero*/
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.hour-hand {
+  height: 10px;
+  min-width: 120px;
+  width: 20%;
+  max-width: 200px;
+}
+
+.min-hand {
+  height: 5px;
+}
+
+.second-hand {
+  height: 3px;
+}
