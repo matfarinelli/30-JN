@@ -1,16 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    let btn_menu = document.querySelector("#btn_menu");
-    let menu = document.querySelector(".nav_menu");
-
-    btn_menu.addEventListener("click", desplegar_menu);
-
-    function desplegar_menu() {
-        menu.classList.toggle("ver_menu");
-
-    }
-    //console.log(btn_menu);
-
-
-
+    const toggleButton = document.querySelector('.toggle-menu');
+    const navBar = document.querySelector('.nav-bar');
+    toggleButton.addEventListener('click', () => {
+        navBar.classList.toggle('toggle');
+    });
 })
